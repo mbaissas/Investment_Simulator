@@ -1,9 +1,12 @@
-# 📈 Investment Simulator — Monte Carlo
+# 📈 Investment Simulator
 
-> A Python tool that uses **historical ETF data** and **Monte Carlo simulation** to project the future value of a multi-envelope investment portfolio.
+> A Python tool that uses **historical ETF data** and **predictive modeling** (Monte Carlo simulation & Machine Learning) to project the future value of a multi-envelope investment portfolio.
 
-Instead of picking a single "expected return" and getting one number, this simulator runs **10,000 independent scenarios** based on real historical return distributions, giving you honest probabilistic answers:
+This simulator provides probabilistic forecasts using multiple approaches:
+- **Monte Carlo**: Runs thousands of scenarios based on real historical return distributions
+- **Machine Learning**: Uses Random Forest, Linear Regression, and other models to predict portfolio evolution
 
+Example insights:
 - *"In 20 years, you'll most likely have between 180k€ and 650k€ — median 380k€"*
 - *"You have a 72% chance of reaching 100k€ within 15 years"*
 - *"At the median, you'll reach 60k€ in 8.4 years"*
@@ -20,7 +23,8 @@ investment-simulator/
 │
 ├── models/
 │   ├── return_model.py     # Fits return distributions to historical data
-│   └── monte_carlo.py      # Core Monte Carlo engine (10k paths, vectorised)
+│   ├── monte_carlo.py      # Monte Carlo simulation engine
+│   └── ml_predictor.py     # ML models (Random Forest, Linear Regression, etc.)
 │
 ├── simulation/
 │   ├── cashflow.py         # Variable contribution schedules (e.g. salary increase)
@@ -173,19 +177,7 @@ Always consult a licensed financial advisor before making investment decisions.
 
 ## 🛣️ Roadmap
 
-- [ ] **Phase 1** — Core Python simulator *(current)*
+- [ ] **Phase 1** — Core Python simulator with MC & ML models *(current)*
 - [ ] **Phase 2** — Streamlit web interface (interactive sliders, live charts)
 - [ ] **Phase 3** — Regime detection with Hidden Markov Models (bull/bear market awareness)
 - [ ] **Phase 4** — FastAPI backend + React frontend
-
----
-
-## 🤝 Contributing
-
-Pull requests welcome. For major changes, open an issue first.
-
----
-
-## 📄 License
-
-MIT
