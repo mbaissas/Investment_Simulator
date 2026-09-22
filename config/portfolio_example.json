@@ -1,0 +1,114 @@
+{
+  "_comment": "Example portfolio — replace with your own values. All amounts in euros.",
+  "name": "My Portfolio",
+  "salary_start_month": 12,
+  "total_monthly_now": 300,
+  "total_monthly_after_salary": 862,
+
+  "envelopes": [
+    {
+      "name": "PEA",
+      "holdings": [
+        {
+          "asset": "MSCI World",
+          "current_value": 702,
+          "monthly_now": 150,
+          "monthly_after_salary": 450,
+          "_note": "Priority: best tax wrapper in France (no income tax on gains after 5 years)"
+        },
+        {
+          "asset": "CAC 40",
+          "current_value": 143,
+          "monthly_now": 0,
+          "monthly_after_salary": 0
+        }
+      ]
+    },
+    {
+      "name": "CTO",
+      "holdings": [
+        {
+          "asset": "S&P 500 Info Tech",
+          "current_value": 624,
+          "monthly_now": 50,
+          "monthly_after_salary": 50,
+          "_note": "High-growth, high-volatility sector exposure"
+        },
+        {
+          "asset": "Core S&P 500",
+          "current_value": 381,
+          "monthly_now": 20,
+          "monthly_after_salary": 120,
+          "_note": "Increased after salary to diversify away from tech concentration"
+        },
+        {
+          "asset": "MSCI ACWI",
+          "current_value": 158,
+          "monthly_now": 0,
+          "monthly_after_salary": 0
+        },
+        {
+          "asset": "SpaceX",
+          "current_value": 142,
+          "monthly_now": 0,
+          "monthly_after_salary": 0,
+          "_note": "Private — using assumed parameters (no ticker available)"
+        }
+      ]
+    },
+    {
+      "name": "Crypto",
+      "holdings": [
+        {
+          "asset": "Bitcoin",
+          "current_value": 72,
+          "monthly_now": 30,
+          "monthly_after_salary": 80,
+          "_note": "High risk / high reward. Keep exposure moderate."
+        }
+      ]
+    },
+    {
+      "name": "Assurance Vie",
+      "holdings": [
+        {
+          "asset": "Fonds Euro",
+          "current_value": 500,
+          "monthly_now": 0,
+          "monthly_after_salary": 0,
+          "_note": "Capital guaranteed, low return. Tax benefits after 8 years."
+        },
+        {
+          "asset": "Bourso Monde",
+          "current_value": 149,
+          "monthly_now": 50,
+          "monthly_after_salary": 162
+        }
+      ]
+    },
+    {
+      "name": "Livret A",
+      "holdings": [
+        {
+          "asset": "Livret A",
+          "current_value": 13621,
+          "monthly_now": 0,
+          "monthly_after_salary": 0,
+          "_note": "Emergency fund / investment reservoir. No growth assumption above rate."
+        }
+      ]
+    },
+    {
+      "name": "Livret Jeune",
+      "holdings": [
+        {
+          "asset": "Livret Jeune",
+          "current_value": 1600,
+          "monthly_now": 0,
+          "monthly_after_salary": 0,
+          "_note": "Regulated savings account. Rate set by bank (typically 3-4%)."
+        }
+      ]
+    }
+  ]
+}
